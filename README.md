@@ -143,4 +143,4 @@ When you are ready to share your work, please ensure you provide both links:
 1. The Source Code: A link to your public GitHub (or GitLab/Bitbucket) repository.
 2. The Live Demo: A link to the deployed application (e.g., Vercel, Netlify, Railway).
 
-To submit: Reply to the email that sent you this challenge with both links,
+To submit: Reply to the email that sent you this challenge with both links.
