@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 const BINANCE_API_BASE = 'https://api.binance.com/api/v3';
 
 export const dynamic = 'force-dynamic';
+export const maxDuration = 30;
 
 export async function GET(request: Request) {
   try {

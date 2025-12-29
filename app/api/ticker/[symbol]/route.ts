@@ -3,13 +3,14 @@ import { NextResponse } from 'next/server';
 const BINANCE_API_BASE = 'https://api.binance.com/api/v3';
 
 export const dynamic = 'force-dynamic';
+export const maxDuration = 30;
 
 export async function GET(
   request: Request,
-  { params }: { params: { symbol: string } }
+  { params }: { params: Promise<{ symbol: string }> }
 ) {
   try {
-    const { symbol } = params;
+    const { symbol } = await params;
     const response = await fetch(
       `${BINANCE_API_BASE}/ticker/24hr?symbol=${symbol}`,
       {
