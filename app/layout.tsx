@@ -6,6 +6,9 @@ import { ThemeProvider } from '@/lib/contexts/ThemeContext'
 export const metadata: Metadata = {
   title: 'Crypto Market Analyzer | Finsphera Challenge',
   description: 'Real-time cryptocurrency market data analyzer with price tracking and analytics',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({
